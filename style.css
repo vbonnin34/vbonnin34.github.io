@@ -263,22 +263,17 @@ a{ color: inherit; text-decoration: none; }
 .project-toggle .chevron{ display:inline-block; transition: transform 0.25s ease; }
 .project-toggle[aria-expanded="true"] .chevron{ transform: rotate(90deg); }
 
-/* Collapsible panel: animate via grid-template-rows for smooth auto height */
+/* Collapsible panel: JS sets max-height inline, this just handles the transition */
 .project-details{
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 .project-details-inner{
-  overflow: hidden;
-  min-height: 0;
-}
-.project-row.open .project-details{
-  grid-template-rows: 1fr;
+  padding-top: 20px;
 }
 .project-details p{
   color: var(--muted);
-  padding-top: 20px;
   max-width: 640px;
 }
 .project-details ul{
