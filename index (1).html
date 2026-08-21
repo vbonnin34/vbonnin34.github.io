@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vincent Bonnin — Robotics Student</title>
+<meta name="description" content="Robotics student portfolio — projects, skills, contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="topbar">
+  <span class="logo">VINCENT BONNIN — <span class="mono">ROBOTICS STUDENT</span></span>
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <span class="mono eyebrow">INTRODUCTION — PORTFOLIO 2026</span>
+      <h1>I design systems that <span class="accent">move</span>, <span class="accent-alt">sense</span> and <span class="accent">decide</span>.</h1>
+      <p class="hero-sub">Robotics student — mechanical design, control systems and embedded vision. Below is an overview of my projects and technical stack.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View projects</a>
+        <a href="mailto:vincent.7bnn@gmail.com" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-diagram">
+      <img src="photos/profil.JPG" alt="Profile photo" style="width:75%; border-radius:4px;">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <span class="mono eyebrow">SEC.01</span>
+      <h2>About</h2>
+    </div>
+    <div class="section-body two-col">
+      <p>
+        I'm a robotics student, currently in engineering school. I'm interested in
+        mechanical design, control systems, and embedded perception — and I especially
+        enjoy projects where software and hardware have to work together, with no
+        compromise.
+      </p>
+      <p>
+        Replace this paragraph with your real background: school, specialization,
+        internships, technical interests (drones, robotic arms, mobile robots,
+        embedded AI...).
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-head">
+      <span class="mono eyebrow">SEC.02</span>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <span class="mono skill-tag">MECH</span>
+        <h3>Mechanical design</h3>
+        <p>SolidWorks / Fusion 360, kinematics, 3D printing, rapid prototyping.</p>
+      </div>
+      <div class="skill-card">
+        <span class="mono skill-tag">CTRL</span>
+        <h3>Control systems</h3>
+        <p>PID control, embedded systems, STM32 / Arduino, ROS / ROS2.</p>
+      </div>
+      <div class="skill-card">
+        <span class="mono skill-tag">VISION</span>
+        <h3>Perception & AI</h3>
+        <p>Python, OpenCV, LiDAR/camera sensors, signal processing.</p>
+      </div>
+      <div class="skill-card">
+        <span class="mono skill-tag">SOFT</span>
+        <h3>Software development</h3>
+        <p>C / C++, Python, Git, simulation (Gazebo / Webots).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <span class="mono eyebrow">SEC.03</span>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="projects-list">
+      <article class="project-row">
+        <div class="project-summary">
+          <span class="mono project-num">01</span>
+          <div class="project-info">
+            <h3>Project name — 4-axis robotic arm</h3>
+            <p>Short description: project goal, your role, results achieved.</p>
+            <div class="tags"><span>ROS2</span><span>C++</span><span>Inverse kinematics</span></div>
+          </div>
+          <button class="project-toggle mono" aria-expanded="false">VIEW <span class="chevron">→</span></button>
+        </div>
+        <div class="project-details">
+          <div class="project-details-inner">
+            <p>
+              Replace this with the full write-up: context, constraints, the approach you
+              took, technical choices, and what you'd do differently next time.
+            </p>
+            <ul>
+              <li>Key result or metric #1</li>
+              <li>Key result or metric #2</li>
+              <li>Link to code / demo / report</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-summary">
+          <span class="mono project-num">02</span>
+          <div class="project-info">
+            <h3>Project name — Autonomous mobile robot</h3>
+            <p>Short description: navigation, obstacle avoidance, sensors used.</p>
+            <div class="tags"><span>Python</span><span>LiDAR</span><span>SLAM</span></div>
+          </div>
+          <button class="project-toggle mono" aria-expanded="false">VIEW <span class="chevron">→</span></button>
+        </div>
+        <div class="project-details">
+          <div class="project-details-inner">
+            <p>
+              Replace this with the full write-up: context, constraints, the approach you
+              took, technical choices, and what you'd do differently next time.
+            </p>
+            <ul>
+              <li>Key result or metric #1</li>
+              <li>Key result or metric #2</li>
+              <li>Link to code / demo / report</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-summary">
+          <span class="mono project-num">03</span>
+          <div class="project-info">
+            <h3>Project name — Embedded vision</h3>
+            <p>Short description: real-time object detection on an embedded board.</p>
+            <div class="tags"><span>OpenCV</span><span>Raspberry Pi</span><span>TensorFlow Lite</span></div>
+          </div>
+          <button class="project-toggle mono" aria-expanded="false">VIEW <span class="chevron">→</span></button>
+        </div>
+        <div class="project-details">
+          <div class="project-details-inner">
+            <p>
+              Replace this with the full write-up: context, constraints, the approach you
+              took, technical choices, and what you'd do differently next time.
+            </p>
+            <ul>
+              <li>Key result or metric #1</li>
+              <li>Key result or metric #2</li>
+              <li>Link to code / demo / report</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-head">
+      <span class="mono eyebrow">SEC.04</span>
+      <h2>Contact</h2>
+    </div>
+    <p class="contact-text">
+      Open to internships, international assignments (VIE), and technical discussions.
+      Feel free to reach out or check out my profiles below.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:vincent.7bnn@gmail.com" class="btn-primary">vincent.7bnn@gmail.com</a>
+      <a href="https://github.com/vbonnin34/vbonnin34.github.io" class="btn-ghost">GitHub</a>
+      <a href="https://www.linkedin.com/in/vincent-bonnin-662155328/" class="btn-ghost">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="mono">Vincent Bonnin</span>
+  <span class="mono">Portfolio 2026</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
