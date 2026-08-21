@@ -2,9 +2,20 @@
 (function () {
   const toggles = document.querySelectorAll(".project-toggle");
   toggles.forEach((btn) => {
+    const row = btn.closest(".project-row");
+    const details = row.querySelector(".project-details");
+
+    // État initial : fermé.
+    details.style.maxHeight = "0px";
+
     btn.addEventListener("click", () => {
-      const row = btn.closest(".project-row");
       const isOpen = row.classList.contains("open");
+
+      if (isOpen) {
+        details.style.maxHeight = "0px";
+      } else {
+        details.style.maxHeight = details.scrollHeight + "px";
+      }
 
       row.classList.toggle("open", !isOpen);
       btn.setAttribute("aria-expanded", String(!isOpen));
