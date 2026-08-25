@@ -331,8 +331,9 @@ a:focus-visible{
 }
 .timeline-entry{
   display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 32px;
+  grid-template-columns: 140px 64px 1fr;
+  gap: 24px;
+  align-items: start;
   padding-left: 20px;
   border-left: 2px solid var(--line);
 }
