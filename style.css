@@ -199,6 +199,9 @@ a{ color: inherit; text-decoration: none; }
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   color: var(--muted);
+  color: #FFFFFF;
+  text-align: justify;
+  hyphens: auto;
 }
 @media (max-width: 720px){ .two-col{ grid-template-columns: 1fr; } }
 
