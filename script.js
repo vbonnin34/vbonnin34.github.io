@@ -1,9 +1,21 @@
-// Accordéon : déplie/replie le détail de chaque projet au clic sur "VIEW".
+// Accordéon : déplie/replie le détail de chaque projet au clic sur l'image.
 (function () {
-  const toggles = document.querySelectorAll(".project-toggle");
+  const toggles = document.querySelectorAll(".project-image-toggle");
   toggles.forEach((btn) => {
     const row = btn.closest(".project-row");
     const details = row.querySelector(".project-details");
+    details.style.maxHeight = "0px";
+    btn.addEventListener("click", () => {
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      if (isOpen) {
+        details.style.maxHeight = "0px";
+      } else {
+        details.style.maxHeight = details.scrollHeight + "px";
+      }
+      btn.setAttribute("aria-expanded", String(!isOpen));
+    });
+  });
+})();
 
     // État initial : fermé.
     details.style.maxHeight = "0px";
