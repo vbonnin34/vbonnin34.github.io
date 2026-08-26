@@ -26,6 +26,26 @@
   });
 })();
 
+
+// Resume preview toggle (same pattern as project accordion).
+(function () {
+  const btn = document.querySelector(".resume-toggle");
+  if (!btn) return;
+  const details = document.querySelector(".resume-details");
+  details.style.maxHeight = "0px";
+  btn.addEventListener("click", () => {
+    const isOpen = btn.getAttribute("aria-expanded") === "true";
+    if (isOpen) {
+      details.style.maxHeight = "0px";
+    } else {
+      details.style.maxHeight = details.scrollHeight + "px";
+    }
+    btn.setAttribute("aria-expanded", String(!isOpen));
+    const label = btn.querySelector(".chevron");
+    if (label) label.textContent = isOpen ? "→" : "↓";
+  });
+})();
+
 // Anime les valeurs de coordonnées affichées à côté du schéma du bras robotisé,
 // pour renforcer l'idée d'un système asservi en temps réel.
 (function () {
