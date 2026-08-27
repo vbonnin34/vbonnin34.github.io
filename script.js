@@ -17,28 +17,6 @@
   });
 })();
 
-    // État initial : fermé.
-    details.style.maxHeight = "0px";
-
-    btn.addEventListener("click", () => {
-      const isOpen = row.classList.contains("open");
-
-      if (isOpen) {
-        details.style.maxHeight = "0px";
-      } else {
-        details.style.maxHeight = details.scrollHeight + "px";
-      }
-
-      row.classList.toggle("open", !isOpen);
-      btn.setAttribute("aria-expanded", String(!isOpen));
-
-      const label = btn.querySelector(".chevron");
-      if (label) label.textContent = isOpen ? "→" : "↓";
-    });
-  });
-})();
-
-
 // Resume preview toggle (same pattern as project accordion).
 (function () {
   const btn = document.querySelector(".resume-toggle");
