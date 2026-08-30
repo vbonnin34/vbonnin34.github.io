@@ -39,7 +39,13 @@
         <a href="mailto:vincent.7bnn@gmail.com" class="btn-ghost">Get in touch</a>
       </div>
     </div>
-
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View projects</a>
+        <a href="mailto:vincent.7bnn@gmail.com" class="btn-ghost">Get in touch</a>
+        <a href="#current-project" class="btn-ghost">
+          Latest project <span class="mono" style="font-size:0.7rem; opacity:0.7;">(in progress)</span>
+        </a>
+      </div>
     <div class="hero-diagram">
       <img src="photos/profil.JPG" alt="Profile photo" style="width:75%; border-radius:4px;">
     </div>
@@ -164,7 +170,6 @@
     </div>
   </section>
 
-  
   <!-- PROJECTS -->
   <section id="projects" class="section">
     <div class="section-head">
@@ -173,86 +178,209 @@
     </div>
 
     <div class="projects-list">
+
+      <!-- Project 1 -->
       <article class="project-row">
         <div class="project-header">
           <span class="mono project-num">01</span>
-          <h3>Project name — 4-axis robotic arm</h3>
+          <h3>Mechanical prosthetic hand for a finger amputee</h3>
         </div>
-        <div class="tags"><span>ROS2</span><span>C++</span><span>Inverse kinematics</span></div>
+        <div class="tags"><span>CAD</span><span>3D scanning</span><span>Mechanism design</span></div>
 
         <button class="project-image-toggle" aria-expanded="false">
-          <img src="projects/robot-arm-main.jpg" alt="4-axis robotic arm" class="project-main-img">
+          <img src="projects/prosthetic-hand-main.jpg" alt="Mechanical prosthetic hand" class="project-main-img">
         </button>
 
         <div class="project-details">
           <div class="project-details-inner">
             <p>
-              Replace this with the full write-up: context, constraints, the approach you
-              took, technical choices, and what you'd do differently next time.
+              Designed a fully mechanical prosthetic hand for a patient who had lost all
+              fingers in an accident, with no electronic components. Reconstructed a 3D
+              scan of the patient's residual hand (STL format) and built a custom-fitted
+              device around it — reworking complex organic surfaces and boolean operations
+              in CAD to match the patient's anatomy.
+            </p>
+            <p>
+              The core challenge was enabling one-motion closure: elastic cords anchored at
+              the fingertips are routed across the palm to the wrist, so that flexing the
+              wrist inward tensions the cords and closes all fingers simultaneously.
             </p>
             <ul>
-              <li>Key result or metric #1</li>
-              <li>Key result or metric #2</li>
-              <li>Link to code / demo / report</li>
+              <li>Fully functional prototype achieving the target one-motion grip</li>
+              <li>Identified a ratchet-lock mechanism as the next improvement, to hold the
+                  hand closed for carrying heavier objects</li>
+              <li>Duration: 6 weeks</li>
             </ul>
           </div>
         </div>
       </article>
 
+      <!-- Project 2 -->
       <article class="project-row">
         <div class="project-header">
           <span class="mono project-num">02</span>
-          <h3>Project name — Autonomous mobile robot</h3>
+          <h3>Pediatric tracheostomy training mannequin</h3>
         </div>
-        <div class="tags"><span>Python</span><span>LiDAR</span><span>SLAM</span></div>
+        <div class="tags"><span>3D Slicer</span><span>Medical imaging</span><span>CATIA</span><span>Onshape</span></div>
 
         <button class="project-image-toggle" aria-expanded="false">
-          <img src="projects/mobile-robot-main.jpg" alt="Autonomous mobile robot" class="project-main-img">
+          <img src="projects/tracheostomy-mannequin-main.jpg" alt="Pediatric tracheostomy training mannequin" class="project-main-img">
         </button>
 
         <div class="project-details">
           <div class="project-details-inner">
             <p>
-              Replace this with the full write-up: context, constraints, the approach you
-              took, technical choices, and what you'd do differently next time.
+              Built a realistic training mannequin for surgical residents to practice
+              pediatric tracheostomy — a procedure with very few dedicated training tools
+              available. Reconstructed the full anatomy (skeleton, trachea, organs) from
+              DICOM medical imaging files, then cleaned up and optimized the resulting
+              geometry across 3D Slicer, Meshmixer, CATIA, and Onshape for manufacturing.
+            </p>
+            <p>
+              Focused on biomechanical realism: designed an articulated neck joint using a
+              rigid silicone tube fixed through the vertebrae to the skull, reproducing the
+              cervical motion of tilting an infant's head back during the procedure —
+              alongside precise internal organ placement and custom silicone molds.
             </p>
             <ul>
-              <li>Key result or metric #1</li>
-              <li>Key result or metric #2</li>
-              <li>Link to code / demo / report</li>
+              <li>Delivered a first functional version with cervical articulation, tracheostomy cannula, and torso support structure</li>
+              <li>Planned next steps: silicone neck skin and internal fill material for added tactile realism</li>
+              <li>Duration: 6 weeks</li>
             </ul>
           </div>
         </div>
       </article>
 
+      <!-- Project 3 -->
       <article class="project-row">
         <div class="project-header">
           <span class="mono project-num">03</span>
-          <h3>Project name — Embedded vision</h3>
+          <h3>High-precision vibration generator for MMG sensor calibration</h3>
         </div>
-        <div class="tags"><span>OpenCV</span><span>Raspberry Pi</span><span>TensorFlow Lite</span></div>
+        <div class="tags"><span>Arduino</span><span>PID control</span><span>Mechatronics</span></div>
 
         <button class="project-image-toggle" aria-expanded="false">
-          <img src="projects/vision-main.jpg" alt="Embedded vision project" class="project-main-img">
+          <img src="projects/vibration-generator-main.jpg" alt="Vibration generator prototype" class="project-main-img">
         </button>
 
         <div class="project-details">
           <div class="project-details-inner">
             <p>
-              Replace this with the full write-up: context, constraints, the approach you
-              took, technical choices, and what you'd do differently next time.
+              Developed, during my internship at Inria Montpellier (CAMIN team), a complete
+              mechatronic system generating tightly controlled vibration frequencies to
+              calibrate 6-axis MMG (mechanomyogram) biomechanical sensors.
+            </p>
+            <p>
+              The system drives a DC motor through a cam-follower mechanism to vibrate a
+              rod, closed-loop by an LM393 laser sensor to correct drift in real time and
+              guarantee reproducible frequencies. Sized the cam profile and spring to
+              produce a clean sinusoidal oscillation without overloading the motor torque,
+              and tuned the PID control constants using the Ziegler–Nichols method.
             </p>
             <ul>
-              <li>Key result or metric #1</li>
-              <li>Key result or metric #2</li>
-              <li>Link to code / demo / report</li>
+              <li>Achieved stable, reproducible vibration frequencies for sensor calibration</li>
+              <li>Full mechanical design, prototyping, and closed-loop control implementation</li>
             </ul>
           </div>
         </div>
       </article>
+
+      <!-- Project 4 -->
+      <article class="project-row">
+        <div class="project-header">
+          <span class="mono project-num">04</span>
+          <h3>Class Globe 5.80 racing boat — user-centered design</h3>
+        </div>
+        <div class="tags"><span>Onshape</span><span>Design research</span><span>User personas</span></div>
+
+        <button class="project-image-toggle" aria-expanded="false">
+          <img src="projects/globe-boat-main.jpg" alt="Class Globe 5.80 boat CAD model" class="project-main-img">
+        </button>
+
+        <div class="project-details">
+          <div class="project-details-inner">
+            <p>
+              Led a full design-research process for a Class Globe 5.80 racing boat as part
+              of a design course: studied user populations, built personas, created trend
+              boards, and ran preference surveys before modeling the complete boat and its
+              interchangeable tools in CAD on Onshape.
+            </p>
+            <p>
+              Designed the boat as a multi-use platform, with swappable tool modules letting
+              the same hull serve three distinct profiles: racers, beginners, and casual
+              sailors.
+            </p>
+            <ul>
+              <li>Full CAD model of the boat and its modular, interchangeable equipment</li>
+              <li>Design driven end-to-end by user research rather than a fixed spec</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-row">
+        <div class="project-header">
+          <span class="mono project-num">05</span>
+          <h3>Autonomous obstacle avoidance — simulation to real robot</h3>
+        </div>
+        <div class="tags"><span>ROS2</span><span>LiDAR</span><span>Inverse kinematics</span></div>
+
+        <button class="project-image-toggle" aria-expanded="false">
+          <img src="projects/ros2-avoidance-main.jpg" alt="ROS2 obstacle avoidance robot" class="project-main-img">
+        </button>
+
+        <div class="project-details">
+          <div class="project-details-inner">
+            <p>
+              Modeled my school's differential-drive, LiDAR-equipped robot in a ROS2
+              workspace and programmed autonomous obstacle avoidance to explore a randomly
+              cluttered map. Then deployed the same avoidance logic onto the physical robot
+              running ROS2, moving directly from simulation to hardware.
+            </p>
+            <p>
+              Alongside this, modeled a 4-DOF robotic arm in Onshape, imported it into the
+              same workspace, and implemented inverse kinematics to command the end
+              effector's position in space directly from a terminal.
+            </p>
+            <ul>
+              <li>Autonomous obstacle avoidance validated in both simulation and on real hardware</li>
+              <li>Inverse kinematics control of a self-designed 4-DOF arm</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6 - IN PROGRESS -->
+      <article class="project-row" id="current-project">
+        <div class="project-header">
+          <span class="mono project-num">06</span>
+          <h3>Robot dog <span class="status-badge mono">IN PROGRESS</span></h3>
+        </div>
+        <div class="tags"><span>Mechanical design</span><span>Legged locomotion</span></div>
+
+        <button class="project-image-toggle" aria-expanded="false">
+          <img src="projects/robot-dog-main.jpg" alt="Robot dog project" class="project-main-img">
+        </button>
+
+        <div class="project-details">
+          <div class="project-details-inner">
+            <p>
+              Personal project to design a quadruped robot dog from the ground up.
+              Currently at the requirements-definition stage, working out the mechanical
+              architecture, actuation strategy, and design constraints before moving into
+              detailed CAD and prototyping.
+            </p>
+            <ul>
+              <li>Status: requirements and specifications phase</li>
+              <li>Check back soon for design updates</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
-
     <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="section-head">
